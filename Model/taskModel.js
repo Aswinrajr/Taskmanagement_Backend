@@ -10,7 +10,7 @@ const taskSchema = new mongoose.Schema({
     required: true,
   },
   taskStatus: {
-    type: Number,
+    type: String,
     required: true,
   },
   taskDueDate: {
@@ -22,6 +22,10 @@ const taskSchema = new mongoose.Schema({
     required: true,
     default: Date.now,
   },
+  taskVisible:{
+    type:Boolean,
+    default:true
+  }
 });
 
 module.exports = mongoose.model("Task", taskSchema);
