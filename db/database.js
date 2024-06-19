@@ -19,7 +19,7 @@ const mongoose = require("mongoose");
 const dbConnect = (req, res) => {
   mongoose
     .connect(
-      "mongodb+srv://aswinrajr07:yPXdXgF4ThtnerDz@cluster0.xf8fs26.mongodb.net/TaskManagementWebsite",
+      "mongodb+srv://aswinrajr07:6ZNOuiYwUjPkYs7N@cluster0.xf8fs26.mongodb.net/Task_Manager",
       { useNewUrlParser: true, useUnifiedTopology: true }
     )
     .then(() => {
