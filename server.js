@@ -13,7 +13,7 @@ app.use(cookieParser());
 app.use(json());
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://task-management-fontend.vercel.app",
     credentials: true,
   })
 );
